@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166988163643",
+    "project_id": "final-project-goa",
+    "storage_bucket": "final-project-goa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166988163643:android:bff048301a0b81f7af4a1e",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166988163643-8sivo7vf14c7gfs7prtlpte7tgn9ujtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZzP6QJvPfqmTqhqOiPBTI459P2-LhLVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166988163643-8sivo7vf14c7gfs7prtlpte7tgn9ujtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

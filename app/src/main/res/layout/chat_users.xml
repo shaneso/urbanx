@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardElevation="16dp"
+        android:layout_margin="16dp"
+        android:id="@+id/chat_card_image"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/chat_image"
+            android:src="@drawable/ic_default_user"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:cardElevation="16dp"
+        android:layout_alignBottom="@id/chat_card_image"
+        android:layout_alignEnd="@id/chat_card_image"
+        android:id="@+id/chat_online_offline_holder"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/chat_online_offline"
+            android:src="@drawable/ic_green_online"/>
+
+    </androidx.cardview.widget.CardView>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chat_card_image"
+        android:layout_alignTop="@id/chat_card_image"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/chat_username"
+        android:maxLines="1"
+        android:text="Shane"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chat_glimpse"
+        android:layout_alignTop="@id/chat_card_image"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:maxLines="1"
+        android:id="@+id/chat_date"
+        android:text=""
+        android:textColor="@color/grey"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:layout_width="212dp"
+        android:layout_height="26dp"
+        android:layout_toRightOf="@id/chat_card_image"
+        android:layout_below="@id/chat_username"
+        android:textSize="14sp"
+        android:id="@+id/chat_glimpse"
+        android:maxLines="1"
+        android:layout_marginLeft="3dp"
+        android:text=""
+        android:textColor="#6A6767"
+        android:fontFamily="@font/roboto"/>
+
+
+</RelativeLayout>
