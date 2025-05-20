@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignStart="@id/rectangle_profile"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/black"
+                    android:id="@+id/recommended_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Profile"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/profile_profile_profile"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="16dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profile_profile_image_holder"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/profile_profile_image"
+                        android:src="@drawable/ic_default_user"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/rectangle_profile"
+                    android:layout_width="358dp"
+                    android:layout_height="147dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/rectangle_profile_blur" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mackenzie Dy"
+                    android:layout_below="@id/profile_profile_image_holder"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/profile_username"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_gradient"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/recommended_send_friend_request"
+                    android:layout_toRightOf="@id/recommended_block"
+                    android:layout_below="@id/profile_username"
+                    android:fontFamily="@font/roboto"
+                    android:text="Friend Request"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/recommended_block"
+                    android:layout_below="@id/profile_username"
+                    android:fontFamily="@font/roboto"
+                    android:text="Block"
+                    android:textColor="@color/black"/>
+
+
+            </RelativeLayout>
+
+            <!-- Bio -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_biography"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Bio"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="10"
+                    android:id="@+id/profile_bio"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Mackenzie Dy loves taking some showers and eating fried chicken to his heart's content."
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Age -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_person_3"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Age"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:id="@+id/profile_age"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="12"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Location -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_location_2"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_location"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Richmond, BC"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Immigrated From -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_immigrated"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Immigrated From"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_immigrated"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Manila, Phillippines"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Gender -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_gender"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_gender"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Male"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Hobbies -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_hobbies"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Hobbies"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_hobbies"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:maxLines="10"
+                    android:text="Biking, Gaming, Snowboarding, Skiing, Mountain Biking, Reading, Fishing"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Languages -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_languages"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Languages"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_languages"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Tagalog, English"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Values -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_values"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Values"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_values"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Family, Religion"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Likes -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_likes"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="90dp"
+                    android:maxLines="1"
+                    android:text="Likes"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/profile_likes"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Food, Ketchup, Pizza, Bikes, Wax, Nuts"
+                    android:textColor="#6A6767"
+                    android:fontFamily="@font/roboto"/>
+
+            </RelativeLayout>
+
+            <!-- Spacer -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_likes"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/recommended_check_mark"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/animated_check"/>
+
+</RelativeLayout>
+
+

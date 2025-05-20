@@ -1,0 +1,2 @@
+# Google API key leak coverage
+app/google-services.json
